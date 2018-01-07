@@ -1,0 +1,285 @@
+body {
+  font-family: comic sans ms;
+  background-image:url("http://xxbb821.info/wp-content/uploads/2017/09/belgard-modular-paper-backgrounds-floor-s-royalty-free-hd-paper-outdoor-tiles-texture-seamless-backgrounds-floor-s-royalty-free-hd-wall-ipbbtoic.jpg");
+  background-size: cover;
+}
+
+.squareContainer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 15;
+  margin-top: -200px;
+  margin-left: -250px;
+  height: 400px;
+  width: 500px;
+  border: 1px solid black;
+  border-radius: 15px;
+  background-color: #4d4d4d;
+  box-shadow: 0 12px #1a1a1a;
+}
+
+.innerCircle {
+  background-color: #ffffe6;
+  height:150px;
+  width: 235px;
+  border: solid black;
+  border-radius: 35px;
+  border-width: 2px;
+  margin:auto;
+  margin-top: -145px;
+  position: relative;
+ }
+
+#innerCirText{
+  text-align: center;
+  margin-top: 15px;
+  font-family: Arial Black;
+  font-weight: bold;
+  position: relative;
+}
+
+.pointDisplay {
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  border: solid black;
+  margin-left: 20px;
+  background-color: #330000;
+  font-color: #b30000;
+}
+
+#belowCount {
+  margin-left: 23px;
+}
+
+#displayCount {
+  color: #ff1a1a;
+  text-align:center;
+  position: absolute;
+  margin-top: -60px;
+  
+}
+
+#greenButton {
+  background-color: green;
+  height: 170px;
+  width: 220px;
+  border-radius:15px;
+  border-top-right: 80px;
+  margin-left: 20px;
+  margin-top: 10px;
+  position: absolute;
+  cursor: pointer;
+  outline: none;
+  display: block;
+  box-shadow: 0 8px #006600;
+}
+
+#greenButton:hover{
+  box-shadow: 0 4px #006600;
+  top: 2px;
+}
+
+#greenButton:active{
+  box-shadow: none;
+  top: 8px;
+}
+
+#greenButton.lit {
+  background-color: #ffcccc;
+}
+
+#redButton {
+  position: absolute;
+  background-color: red;
+  width: 220px;
+  height: 170px;
+  margin-left: 260px;
+  margin-top: 10px;
+  border-radius: 15px;
+  cursor: pointer;
+  outline: none;
+  display: block;
+  box-shadow: 0 8px #b30000
+}
+
+#redButton:hover{
+  box-shadow: 0 5px #b30000;
+  top: 2px;
+}
+#redButton:active {
+  box-shadow: none;
+  top: 8px;
+}
+
+#redButton.lit {
+  background-color: #ffcccc;
+}
+
+#blueButton {
+  position: absolute;
+  background-color: blue;
+  width: 220px;
+  height: 170px;
+  margin-top: 200px;
+  margin-left: 20px;
+  border-radius: 15px;
+  cursor: pointer;
+  outline: none;
+  display: block;
+  box-shadow: 0 8px #000066;
+}
+
+#blueButton:hover {
+  box-shadow: 0 4px #000066;
+  top: 2px;
+}
+
+#blueButton:active {
+  box-shadow: none;
+  top: 8px;
+}
+
+#blueButton.lit {
+background-color: #ffcccc;  
+}
+
+#yellowButton {
+  position: absolute;
+  background-color: yellow;
+  width: 220px;
+  height: 170px;
+  margin-top: 200px;
+  margin-left: 260px;
+  border-radius: 15px;
+  cursor: pointer;
+  outline: none;
+  display: block;
+  box-shadow: 0 8px #666600;
+}
+
+#yellowButton:hover {
+  box-shadow: 0 4px #666600;
+  top: 2px;
+}
+
+#yellowButton:active {
+  box-shadow: none;
+  top: 8px;
+}
+
+#yellowButton.lit {
+  background-color: #ffcccc;
+}
+
+.start {
+  margin-left: 130px;
+  margin-top: -70px;
+  background-color: green;
+  border-radius: 10px;
+  cursor: pointer;
+  position: relative;
+  outline: none !important;
+  border: none;
+  display: block;
+  font-weight: bold;
+  box-shadow: 0 6px #006600;
+}
+.start:hover{
+  box-shadow: 0 4px #006600;
+  top: 2px;
+}
+
+.start:active {
+  box-shadow: none;
+  top: 6px;
+}
+
+.strict {
+  margin-top: 15px;
+  margin-left: 130px;
+  background-color: red;
+  border-radius: 10px;
+  cursor: pointer;
+  position: relative;
+  outline: none !important;
+  border: none;
+  font-weight: bold;
+  display: block;
+  box-shadow: 0 6px #b30000;
+}
+.strict:hover{
+  box-shadow: 0 4px #b30000;
+  top: 2px;
+}
+.strict:active {
+  box-shadow: none;
+  top: 6px;
+}
+
+.onButton {
+  background-color: tan;
+  margin-left: 70px;
+  border-radius: 30px;
+  cursor: pointer;
+  border: solid black;
+  border-width:1px;
+  outline: none !important;
+}
+
+.offButton {
+  background-color: tan;
+  margin-top: 7px;
+  margin-left: 70px;
+  border-radius: 30px;
+  border: solid black;
+  border-width: 1px;
+  cursor: pointer;
+  outline: none !important;
+}
+
+.onButton:hover {
+  background-color: #ecd9c6;
+}
+
+.offButton:hover {
+  background-color: #ecd9c6;
+}
+
+#modal {
+  display: none;
+  position: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 99999;
+    height: 100%;
+    width: 100%;
+}
+
+.modalcontent {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: tan;
+    width: 80%;
+    padding: 20px;
+    border: solid black;
+    border-width: 4px;
+    border-radius: 10px;
+    font-family: comic sans ms
+}
+
+.modalButton:hover {
+  background-color: #8c8c8c;
+  cursor: pointer;
+}
+
+.modalButton {
+  border-radius: 10px;
+  background-color: #f2f2f2
+}
+

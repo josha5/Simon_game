@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="simonGame.css">
+		<script src="simonGame.js"></script>
+		<audio id = "errorBuzz" src="http://www.freesound.org/data/previews/131/131657_2398403-lq.mp3"></audio>
+		<audio id="greenAudio" src="https://s3.amazonaws.com/freecodecamp/simonSound1.mp3"></audio>
+		<audio id="redAudio" src="https://s3.amazonaws.com/freecodecamp/simonSound2.mp3"></audio>
+		<audio id="blueAudio" src="https://s3.amazonaws.com/freecodecamp/simonSound3.mp3"></audio>
+		<audio id="yellowAudio" src="https://s3.amazonaws.com/freecodecamp/simonSound4.mp3"></audio>
+	</head>
+<body>  
+<div id="modal"> 
+    <div class="modalcontent">
+      <p>Congratulations you won! Click close to play again!</p>
+      <button id="modalClose" class="modalButton">Close</button>
+    </div>
+</div> 
+  <div class = "squareContainer">
+      <div id ="greenButton" class = "button"></div>
+      <div id ="redButton" class="button"></div>
+      <div id ="blueButton" class="button"></div>
+      <div id ="yellowButton" class="button"></div>
+      <div class = "innerCircle">
+      <h2 id="innerCirText">Simon</h2>
+        <div class = "pointDisplay">
+          <button class = "onButton">on</button>
+          <button class = "offButton">off</button>
+          <button class="start" id="button">start</button>
+          <button class= "strict" id="button">strict </button>
+        <h2 id="displayCount">0</h2>
+      </div>
+      <p id="belowCount">count</p>  
+      </div>
+    </div>
+  </div>
+</body>
+</html>
