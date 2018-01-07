@@ -26,8 +26,8 @@ body {
   border: solid black;
   border-radius: 35px;
   border-width: 2px;
-  margin:auto;
-  margin-top: -145px;
+  margin-top: 120px;
+  margin-left: 500px;
   position: relative;
  }
 
